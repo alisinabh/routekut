@@ -1,21 +1,29 @@
 # Routekut
 
-**TODO: Add description**
+Route your traffic based on country of the IP address.
 
-## Installation
+Using routekut generated scripts, You can create static routes for a specific country.
 
-If [available in Hex](https://hex.pm/docs/publish), the package can be installed
-by adding `routekut` to your list of dependencies in `mix.exs`:
 
-```elixir
-def deps do
-  [
-    {:routekut, "~> 0.1.0"}
-  ]
-end
-```
+## Supported platforms
 
-Documentation can be generated with [ExDoc](https://github.com/elixir-lang/ex_doc)
-and published on [HexDocs](https://hexdocs.pm). Once published, the docs can
-be found at [https://hexdocs.pm/routekut](https://hexdocs.pm/routekut).
+ - [x] GNU/Linux (using ip command)
+ - [ ] Windows
+ - [ ] Mikrotik
+ - [ ] pfSense
 
+## How to use
+
+### GNU/Linux
+
+Go to the [Releases](https://github.com/alisinabh/routekut/releases) page and download the latest `linux-ipv4.tar.gz` file.
+
+Extract it and run `./add_routes.sh` in terminal which will interactiveley ask for your country and gateway.
+
+## Contribution
+
+The elixir project here is only used to extract country ip addresses in CIDR format. It currently only supports IPv4.
+
+## Credits
+
+This project uses [db-ip.com](https://db-ip.com) IP to Country Lite Database.
