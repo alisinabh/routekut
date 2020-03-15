@@ -10,7 +10,7 @@ before_install:
 
 script:
 - mix routekut.create
-- tar cfz linux-ipv4.tar.gz add_rotues.sh db
+- tar cfz linux-ipv4.tar.gz add_routes.sh db
 
 deploy:
   provider: releases
