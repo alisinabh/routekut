@@ -1,4 +1,5 @@
 language: elixir
+elixir: '1.10'
 
 before_install:
 - mix local.hex --force
@@ -12,7 +13,8 @@ script:
 
 deploy:
   provider: releases
-  api_key: "399c68cbf401a752f8a4fa600cdb7476886d1f21"
+  api_key:
+    secure: "XWvoCenWkZ2uTviOTzztP8b+CoWzS1VtZd5gHcRd9v9WadkixbT9aCMY86WAWLfXnr5MbibSy1qT40Jx+YjsEeDLznAd04qXSFLfiuw/8J+Y9MAl98IapQQ7BRa8mTNELH744iwDWA5XesHqMfTttvV8d057me1BoFnX0UgFlF4CHu4N8XXKDdvIKY3Zao1gcnuOWSK6/styOqBRAFRBcCUlK4LOfAvXnw0Lav9MLuTXbK549NgC1K5nJRLC8XhD2TNjOK6jBguuHT6JcplcScMKsJdpHjU6eQMvdulkTuxRikbnZahnCY8oxQVojcCneVMJlxINBKrIXqwxjcdTb9AYlMZr4PipIbxBO1a6YMoP7Re9oI4GfDsyiQWgcFAZZ0zPOEdyvZEAGg7MTtOcUzCnYNzex6wxGiYu246EkDzoT7JpA3otx1QuIOjBs68xhv9U7ckdBeFFw8jxaWBehZSDDv9pS6zGwLFWfdTsaSbh2XyJmrwUwp0+z+82DVLDsmdrqOv3Wbe389q4WV2GgZdatJ/8PsOlV1s0+WH2keiFK2ueK4idSIG21Km6pV+g51J/ilZoqO8v7PMOQ4LoXeXNeEnbDArdgEhHwcCKc3gykkUZgKJXH08+qhjFVf1QKuHFL4EA5yQvUqvMUcCSk16vprm5ZvNqHH89h+sHMN4="
   file: "linux-ipv4.tar.gz"
   skip_cleanup: true
   on:
