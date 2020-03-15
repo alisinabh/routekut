@@ -22,6 +22,8 @@ defmodule Routekut do
         |> Enum.join("\n")
 
       File.write!("db/country/#{String.downcase(iso)}/ipv4.cidr", cidrs)
+
+      Logger.info("#{iso} Completed!")
     end)
   end
 
@@ -33,7 +35,6 @@ defmodule Routekut do
         acc ++ formatted
       else
         error ->
-          Logger.error("CIDR parse error: #{inspect(error)}")
           acc
       end
     end)
