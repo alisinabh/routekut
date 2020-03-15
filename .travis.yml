@@ -1,0 +1,17 @@
+language: elixir
+
+before_install:
+- mix deps.get
+- mix compile
+
+script:
+- mix routekut.create
+- tar cfz linux-ipv4.tar.gz add_rotues.sh db
+
+deploy:
+  provider: releases
+  api_key: "399c68cbf401a752f8a4fa600cdb7476886d1f21"
+  file: "linux-ipv4.tar.gz"
+  skip_cleanup: true
+  on:
+    tags: true
