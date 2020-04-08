@@ -9,7 +9,7 @@ Using routekut generated scripts, You can create static routes for a specific co
 
  - [x] GNU/Linux (using ip command)
  - [ ] Windows
- - [ ] Mikrotik
+ - [x] Mikrotik
  - [ ] pfSense
 
 ## How to use
